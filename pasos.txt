@@ -2,7 +2,14 @@
     code .
 
 # chequear estatus de los archivos
-    git status
+    git status 
 
 # Agregar archivos, Nunca usar .
-    git add 
+    git add [nombre archivos]
+    git add *.txt 
+
+# chequear estatus de los archivos
+    git status 
+
+# commit archivos 
+    git commit -m "initial commit"
