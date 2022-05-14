@@ -1,0 +1,8 @@
+# abrir VScode desde la carpeta de trabajo
+    code .
+
+# chequear estatus de los archivos
+    git status
+
+# Agregar archivos, Nunca usar .
+    git add 
