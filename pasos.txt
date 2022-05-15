@@ -60,6 +60,35 @@
 # ver cambios
     git log --oneline
 
+# Branchs por ejemplo de arreglar un issue
+    git status 
+    git branch # ver el Branch
+    # crear nuevo branch
+    git checkout -b ramaB
+    git branch
+    git status
+    # ver historial 
+    git log --oneline
+    # salir a la rama main
+    git checkout main
+
+# Traer los cambios de la ramaB a la rama principal
+    #Nota Estar en la rama main
+    git merge ramaB
+
+# Cuenta y repositorio URL en github sacar llave
+    # crear el repositorio
+    git remote add origin [URL]
+    # subir archivos, con -u se crea la rama
+    git push -u origen main
+
+
+ 
+
+
+
+
+
 
 
 
