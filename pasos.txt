@@ -13,3 +13,55 @@
 
 # commit archivos 
     git commit -m "initial commit"
+
+# despues de cambio en archivos
+    git add [file]
+    git commit # sin -m y abri el archivo para poner mensajes
+    git status
+
+# Si se necesita borrar
+    rm [archivo]
+    git status
+    git commit -m "eliminando archivos"
+    git status
+
+# eliminar y hacer commit
+    git rm [file]
+    git status
+
+#  si se desea regresar al archivo borrado
+    git restore --staged [file]
+
+#  cambiar el nombre
+    mv [file] [newFile]  # se renombro
+    git status # Git no hace track al nuevo pero se observa borrado el file
+    git add [file] [newFile]
+    git status # efectivamente se renombro
+    git commit -m "Message"
+
+    #alternativamente
+    git mv [file] [newFile]
+    git commit -m "Message"
+
+####  Ignorar archivos que no sean subida a Git
+# en la carpeta principal agregar file .gitignore y agregar files y directorios
+    git add .gitignore
+    git commit -m "agregando archivo gitignore"
+
+
+# modo compacto de observar cambios
+    git status -s
+
+# observar la diferencia de lo qeu se agregando
+    git diff
+    # Se sale con la letra q
+    git diff --staged
+
+# ver cambios
+    git log --oneline
+
+
+
+
+
+
